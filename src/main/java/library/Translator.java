@@ -3,9 +3,9 @@ package library;
 import java.io.File;
 import java.util.List;
 
-public class CyrillicToLatin {
+public class Translator {
 
-    public void translate(String directory) {
+    public void translateToLatin(String directory) {
 
         List<String> pathnames = FileWorker.makeList(directory);
         if (pathnames == null) {
@@ -18,8 +18,8 @@ public class CyrillicToLatin {
             File file = new File(directory + "\\" + path);
             StringBuilder path2 = new StringBuilder();
 
-            if (CyrillicToLatin.isNeededTranslate(path)) {
-                boolean isAllUpperCase = CyrillicToLatin.isNameUpperCase(path);
+            if (Translator.isNeededTranslate(path)) {
+                boolean isAllUpperCase = Translator.isNameUpperCase(path);
                 char previousLetter = ' ';
                 char[] charArray = path.toCharArray();
                 for (int i = 0; i < charArray.length; i++) {
@@ -28,7 +28,7 @@ public class CyrillicToLatin {
                         if (i + 1 < charArray.length) {
                             nextLetter = charArray[i + 1];
                         }
-                        path2.append(CyrillicToLatin.changeLetter(charArray[i], previousLetter, nextLetter, isAllUpperCase));
+                        path2.append(Translator.changeCyrillicLetterToLatin(charArray[i], previousLetter, nextLetter, isAllUpperCase));
                     } else {
                         path2.append(charArray[i]);
                     }
@@ -72,7 +72,7 @@ public class CyrillicToLatin {
         return true;
     }
 
-    public static String changeLetter(char c, char previous, char next, boolean isWordUpperCase) {
+    public static String changeCyrillicLetterToLatin(char c, char previous, char next, boolean isWordUpperCase) {
         boolean isNextUpper = String.valueOf(next).equals(String.valueOf(next).toUpperCase());
         switch (c) {
             case 'А':

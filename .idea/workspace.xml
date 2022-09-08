@@ -5,18 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c7f1bff-146a-4279-8d02-4eeb76eaa1e9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/library/CyrillicToLatin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/library/FileWorker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/library/LowerNames.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/library/NameToLower.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/library/NameToUpper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/CyrillicToLatin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/Translator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/LowerNames.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/NameToLower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/Renamer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/NameToUpper.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +62,7 @@
       <workItem from="1662551069507" duration="29000" />
       <workItem from="1662551162589" duration="27000" />
       <workItem from="1662577892147" duration="376000" />
+      <workItem from="1662633079375" duration="319000" />
     </task>
     <servers />
   </component>
